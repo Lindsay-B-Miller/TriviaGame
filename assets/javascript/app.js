@@ -5,13 +5,10 @@ window.onload = function () {
 
 // GLOBAL VARIABLES================================================================================================
 var time = 120;
-var x = $(".container");
-var y = $(".start");
+var wrong = 0;
 
 
-
-
-// FUNCTIONS================================================================================================
+// FUNCTIONS=======================================================================================================
 //start button shows display
 $(".start").click(function start() {
     console.log("started");
@@ -38,5 +35,20 @@ setTimeout(timeUp, 1000 * 30);
 function timeUp() {
     console.log("time up");
     $("#timeRemaining").html("Time's Up!");
+}
+
+//function to check the score
+function check() {
+    var question1 = document.quiz.question1.value;
+    var question2 = document.quiz.question2.value;
+    var correct = 0;
+    if (question1 == "Hartford") {
+        correct++;
+    }
+    if (question2 == "Eugene") {
+        correct++;
+    }
+    document.getElementById("results").style.visibility = "visible";
+    document.getElementById("numCorrect").innerHTML = "Correct: " + correct;
 }
 

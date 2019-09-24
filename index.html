@@ -15,9 +15,34 @@
     <div class="container">
         <h1>Totally Trivial Trivia!</h1>
         <div id="timeRemaining">Time Remaining: 120</div>
-    </div>
+        <form id="quiz" name="quiz">
+            <p>What is the caiptal of Connecticut?</p>
+            <input id="question" type="radio" name="question1" value="Hartford">Hartford
+            <br>
+            <input id="question" type="radio" name="question1" value="Eugene">Eugene
+            <br>
+            <input id="question" type="radio" name="question1" value="Springfield">Springfield
+            <br>
 
-    <!-- jQuery link -->
+            <p>What is thee capital of New York?</p>
+            <input id="question" type="radio" name="question2" value="Hartford">Hartford
+            <br>
+            <input id="question" type="radio" name="question2" value="Eugene">Eugene
+            <br>
+            <input id="question" type="radio" name="question2" value="NewYork">New York
+            <br>
+
+            <input id="submit" type="button" value="Submit" onclick="check();">
+        </form>
+
+        <section id="results">
+            <div id="numCorrect"></div>
+        </section>
+
+    </div>
+    </div>
+    <!-- jQuery
+                link -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <!-- javascript file -->
