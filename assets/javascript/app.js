@@ -5,7 +5,7 @@ window.onload = function () {
 
 // GLOBAL VARIABLES================================================================================================
 var time = 120;
-var wrong = 0;
+
 
 
 // FUNCTIONS=======================================================================================================
@@ -23,13 +23,6 @@ $(".start").click(function start() {
 });
 
 
-// counting down time to 0
-// var intervalId = setInterval(count, 1000);
-
-
-
-
-
 //Time up function
 setTimeout(timeUp, 1000 * 30);
 function timeUp() {
@@ -42,13 +35,21 @@ function check() {
     var question1 = document.quiz.question1.value;
     var question2 = document.quiz.question2.value;
     var correct = 0;
+    var wrong = 0;
     if (question1 == "Hartford") {
         correct++;
+    }
+    else {
+        wrong++;
     }
     if (question2 == "Eugene") {
         correct++;
     }
+    else {
+        wrong++;
+    }
     document.getElementById("results").style.visibility = "visible";
     document.getElementById("numCorrect").innerHTML = "Correct: " + correct;
+    document.getElementById("numWrong").innerHTML = "Wrong: " + wrong;
 }
 
