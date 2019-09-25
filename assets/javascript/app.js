@@ -1,7 +1,7 @@
-//hides main page until press start button
-window.onload = function () {
-    $(".container").hide();
-};
+// //hides main page until press start button
+// window.onload = function () {
+//     document.getElementById("mainContainer").style.display = "none";
+// };
 
 // GLOBAL VARIABLES================================================================================================
 var time = 120;
@@ -17,18 +17,12 @@ $(".start").click(function start() {
     function count() {
         time--;
         $("#timeRemaining").html("Time Remaining: " + time);
+        document.getElementById("mainContainer").style.display = "visible";
     }
     setInterval(count, 1000);
 
 });
 
-
-//Time up function
-setTimeout(timeUp, 1000 * 30);
-function timeUp() {
-    console.log("time up");
-    $("#timeRemaining").html("Time's Up!");
-}
 
 //function to check the score
 function check() {
@@ -308,3 +302,10 @@ function check() {
 
 }
 
+
+//Time up function
+setTimeout(timeUp, 1000 * 120);
+function timeUp() {
+    console.log("time up");
+    check();
+}
