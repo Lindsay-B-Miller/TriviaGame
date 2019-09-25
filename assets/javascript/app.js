@@ -271,15 +271,16 @@ function check() {
         notAnswered++;
     }
 
-
+    // $("#results:visible");
     document.getElementById("results").style.visibility = "visible";
-    document.getElementById("numCorrect").innerHTML = "Correct Answers: " + correct;
-    document.getElementById("numWrong").innerHTML = "Incorrect Answers: " + wrong;
-    document.getElementById("notAnswered").innerHTML = "Unanswered: " + notAnswered;
-
-    //same result through jQuery
-    // $('.container').toggle();
-    document.getElementById("mainContainer").style.display = "none";
+    $("#numCorrect").html("Correct Answers: " + correct);
+    // document.getElementById("numCorrect").innerHTML = "Correct Answers: " + correct;
+    $("#numWrong").html("Incorrect Answers: " + wrong);
+    // document.getElementById("numWrong").innerHTML = "Incorrect Answers: " + wrong;
+    $("#notAnswered").html("Unanswered: " + notAnswered);
+    // document.getElementById("notAnswered").innerHTML = "Unanswered: " + notAnswered;
+    $("#mainContainer").remove();
+    // document.getElementById("mainContainer").style.display = "none";
 
 }
 
