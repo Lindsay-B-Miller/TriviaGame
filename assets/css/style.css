@@ -1,8 +1,31 @@
-/* .container {
-    visibility: hidden;
-} */
 
 #results {
     visibility: hidden;
 }
 
+.start {
+    box-sizing: border-box;
+    width: 500px;
+    background-color: yellow;
+    border: 5px solid pink;
+    padding: 100px 200px 100px 200px;
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.container {
+    box-sizing: border-box;
+    background-color: yellow;
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+    border: 5px solid pink;
+}
+
+#submit {
+    padding: 10px;
+    font-size: 12px;
+    margin: 10px;
+}

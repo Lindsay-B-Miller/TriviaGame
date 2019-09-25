@@ -297,9 +297,14 @@ function check() {
     else {
         notAnswered++;
     }
+
+
     document.getElementById("results").style.visibility = "visible";
     document.getElementById("numCorrect").innerHTML = "Correct: " + correct;
     document.getElementById("numWrong").innerHTML = "Wrong: " + wrong;
     document.getElementById("notAnswered").innerHTML = "Not Answered: " + notAnswered;
+    // $('.container').toggle();
+    document.getElementById("mainContainer").style.display = "none";
+
 }
 
