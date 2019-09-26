@@ -21,6 +21,10 @@ body {
     color: white;
 }
 
+.start:hover {
+    border: 10px solid blue;
+}
+
 #timeRemaining {
     font-size: 20px;
     color: white;
