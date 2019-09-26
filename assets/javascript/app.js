@@ -19,7 +19,7 @@ $(".start").click(function start() {
         $("#mainContainer:visible");
     }
     setInterval(count, 1000);
-    console.log("Correct Answers: " + "Question 1: " + question1);
+    console.log("Correct Answers: Question 1: Lane Cake. Question 2: Arkansas. Question 3: Colorado. Question 4: Pepsi. Question 5: Watermellon. Question 6: Philly Cheesesteak. Question 7: Dried Fruit. Question 8: Deep-Dish Pizza. Question 9: Ice Cream. Question 10: November 3. Question 11: Bread. Question 12: Fried Chicken. Question 13: Georgia. Question 14: Turkey. Question 15: Key Lime Pie. Question 16: Ketchup. Question 17: Ginger Ale. Question 18: Chocolate Milk. Question 19: Smores. Question 20: Cherries.");
 });
 
 
